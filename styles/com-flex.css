@@ -7,7 +7,7 @@
     height:100%;
 }
 .row1,.row2{
-    height: 400px;
+    
     margin-bottom: 5px;
 }
 .row2>div{
@@ -16,7 +16,7 @@
 .row2 ,.row3{
     display: flex;
     gap:5px;
-    height: 400px;
+    
 
 }
 .row2-third{
@@ -34,4 +34,18 @@
 }
 .row3 >div{
     flex:1;
+}
+@media screen and (max-width:576px){
+    .row2 ,.row3{
+        flex-direction: column;
+    }
+    .row3-second{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-width:577px) {
+    .row1 , .row2{
+        height:400px;
+    }
+    
 }
