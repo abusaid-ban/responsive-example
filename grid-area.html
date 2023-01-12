@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid area and media query</title>
+    <link rel="stylesheet" href="styles/grid-area.css">
+</head>
+<body class="grid-container">
+    <header class="header">
+        <h2>Header</h2>
+    </header>
+    <!-- nav.nav>ul>li*3{nav-$} -->
+    <nav class="nav">
+        <ul>
+            <li>nav-1</li>
+            <li>nav-2</li>
+            <li>nav-3</li>
+        </ul>
+    </nav>
+   
+    <main class="main">
+        <!-- article*2>h3{article-$}+p>lorem30 -->
+        <article>
+            <h3>article-1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, quaerat exercitationem? Aspernatur beatae consectetur similique quas corrupti incidunt esse minus, ad atque. Soluta necessitatibus maiores modi reprehenderit sapiente unde error!</p>
+        </article>
+        <article>
+            <h3>article-2</h3>
+            <p>Ipsam, nostrum laboriosam doloremque magnam beatae minus accusantium velit aspernatur consequuntur ipsa asperiores blanditiis quam, veritatis impedit necessitatibus tempora ratione quo ab dolor quia provident mollitia reiciendis. Excepturi, et ad.</p>
+        </article>
+    </main>
+    <!-- aside.aside>ul>li*3>a{aside-$} -->
+    <aside class="aside">
+        <h3>Side-bar</h3>
+        <ul>
+            <li><a href="">aside-1</a></li>
+            <li><a href="">aside-2</a></li>
+            <li><a href="">aside-3</a></li>
+        </ul>
+    </aside>
+    <div class="ad">
+        <h3>adv</h3>
+    </div>
+    <footer class="footer">
+         <p>footer</p>
+    </footer>
+</body>
+</html>
